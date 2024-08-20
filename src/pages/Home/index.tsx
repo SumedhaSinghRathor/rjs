@@ -1,10 +1,10 @@
 import React from 'react'
-import HomeSlider from "../../components/HomeSlider"
+import HomeCarousel from '../../components/Navbar/HomeSlider'
 
 function Home() {
   return (
     <div className='w-[90%] mx-auto'>
-        <HomeSlider />
+        <HomeCarousel />
     </div>
   )
 }
