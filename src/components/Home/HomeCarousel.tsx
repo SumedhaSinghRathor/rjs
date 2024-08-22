@@ -1,9 +1,9 @@
 import { imagepath } from '../../utils/constant'
 import { FiThumbsUp } from 'react-icons/fi'
-import { CarouselMovie } from '../../utils/constant'
+import { CarouselMovieType } from '../../utils/constant'
 
 interface HomeSliderProps {
-    carouselMovies: CarouselMovie[]
+    carouselMovies: CarouselMovieType[]
 }
 
 function HomeSlider({ carouselMovies }: HomeSliderProps) {
@@ -15,6 +15,7 @@ function HomeSlider({ carouselMovies }: HomeSliderProps) {
                         <div className="relative">
                             {/* <div className="block bg-red-300 aspect-[7/4]"></div> */}
                             <img src={imagepath + movie?.backdrop_path} className='w-full ascpect-[7/4]' alt="" />
+                            <div className={`absolute w-full h-full top-0 left-0 bg-black opacity-[0.1] hover:opacity-[0.2]`}></div>
                             <div className="absolute bottom-0 h-44 w-full _carouselGradient"></div>
                         </div>
                         <div className="absolute bottom-0 flex items-end gap-4 px-4">
